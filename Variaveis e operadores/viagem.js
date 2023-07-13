@@ -5,7 +5,7 @@ const readline = require("readline")
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
-});
+})
 
 rl.question("Preço do combustível: ", function(precoCombustivel) { //$/L
      precoCombustivel = precoCombustivel
@@ -15,11 +15,11 @@ rl.question("Preço do combustível: ", function(precoCombustivel) { //$/L
                  distancia = distancia
                  var precoTotal = precoCombustivel*gastoMedio*distancia
                 console.log(`Você gastou na sua viagem: ${precoTotal} reais`)
-                rl.close();
+                rl.close()
             })
     })
 })
 
 rl.on("close", function() {
     process.exit(0)
-});
+})

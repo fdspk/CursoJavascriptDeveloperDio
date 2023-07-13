@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos com viagem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gastos com viagem</h1>
+    </header>
+    <div class="background">
+        <div class="containerout">
+            <section class="container">
+                <label for="precoCombustivel">Preço do combustível: </label>
+                <input type="text" name="precoCombustivel" id="precoCombustivel" placeholder="R$/L">
+                <label for="gastoMedio">Gasto médio de combustível: </label>
+                <input type="text" name="gastoMedio" id="gastoMedio" placeholder="Km/L">
+                <label for="distancia">Km rodados: </label>
+                <input type="text" name="distancia" id="distancia" placeholder="Km">
+            </section>
+        </div>
+        <button onclick="calcular()">Calcular</button>
+        <div id="resp"></div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
